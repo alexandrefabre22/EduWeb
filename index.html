@@ -1,1 +1,213 @@
-TEST
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <script src="script.js"></script>
+    <title>Alexandre Fabre - Interventions en Intelligence Artificielle</title>
+	
+	
+</head>
+<body>
+    <!-- En-tête -->
+	<header>
+		<div class="content">
+		<hgroup>
+		  <h1>Intervenant en Intelligence Artificielle</h1>
+		  <i>Ecoles - Collèges - Lycée</i>
+		</hgroup>
+		</div>
+		<div class="overlay"></div>
+	</header>
+
+    <!-- Tableau de sections -->
+    <div class="table">
+        <!-- Première ligne du tableau -->
+		<div class="row">
+			<div class="grid">
+				<div class="cell presentation">
+					<!-- Contenu de la section "Présentation" -->
+					<h2 class="box-title">Qui suis-je ?</h2>
+					<!--- Donner du sens aux apprentissages - -->
+					<p class="box-content">
+						Je m'appelle Alexandre Fabre, j'ai 29 ans. Mon parcours professionnelle m'a permis de cotoyer à la fois 
+						le monde de l'enseignement et celui de l'Intelligence Artificielle. 
+					</p>
+					<p class="box-content">
+						Je propose des interventions dans des écoles, collèges et lycée, du <b>CM1 à la terminale</b>. Vous trouverez
+						sur le site le détail de ces interventions ainsi que des ressources spécifiques à employer vous-mêmes dans les classes.
+					</p>
+				</div>
+				<div class="cell carreer">
+					<h2 class="box-title">Parcours Professionnel</h2>
+					<ul class="timeline">
+						<li class="timeline-milestone is-completed timeline-start">
+						  <div class="timeline-action">
+							<h2 class="title">Ingénieur Données</h2>
+							<div class="content">
+								Je traitais des données et les présentais.
+							</div>
+						  </div>
+						</li>
+						<li class="timeline-milestone is-completed timeline-start">
+						  <div class="timeline-action">
+							<h2 class="title">Doctorat en Intelligence Artificielle</h2>
+							<div class="content">
+								Je travaillais essentiellement sur la détection d'émotion appliquée à la robotique. 
+							</div>
+						  </div>
+						</li>
+						<li class="timeline-milestone is-completed timeline-start">
+						  <div class="timeline-action">
+							<h2 class="title">Professeur des écoles</h2>
+							<div class="content">
+								J'ai enseigné dans tous les niveaux et également en SEGPA.
+							</div>
+						  </div>
+						</li>
+						<li class="timeline-milestone is-current">
+						  <div class="timeline-action is-expandable expanded">
+							<h2 class="title">Intervenant IA</h2>
+							<div class="content">
+								Au cours de mon doctorat, je suis intervenu auprès d'enseignant de lycée sur des formations à l'IA.
+							</div>
+						  </div>
+						</li>
+					</ul>
+					<a href="CV.pdf" target="_blank">Voir mon CV</a>
+					
+				</div>
+
+				 <div class="cell interventions">
+					<div class="container-interventions">
+						<div class="carousel">
+							<!-- Diapositive 1 -->
+							<div class="slide">
+								<div class="slide-content">
+									<div class="text-slide">
+										<h2>Courts de Sciences - Edition 2020</h2>
+										<p class="box-content">
+											Dans le cadre de mon doctorat en Intelligence Artificielle, j'ai eu le privilège de présenter le robot 
+											humanoïde NAO à l'édition 2020 de Courts de Sciences. Des enfants ont pu le défier au jeu du Memory !
+										</p>
+									</div>
+									<img src="images/courts_sciences.jpg" alt="Image de la diapositive 1">
+								</div>
+							</div>
+
+							<!-- Diapositive 2 -->
+							<div class="slide">
+								<div class="slide-content">
+									<p>Texte de la diapositive 2</p>
+									<img src="images/college.jpg" alt="Image de la diapositive 2">
+								</div>
+							</div>
+
+							<!-- Diapositive 3 -->
+							<div class="slide">
+								<div class="slide-content">
+									<p>Texte de la diapositive 3</p>
+									<img src="images/lycee.jpg" alt="Image de la diapositive 3">
+								</div>
+								
+							</div>
+						</div>
+						<div class="arrows">
+							<div class="prev-arrow" onclick="prevSlide()">&#9664;</div>
+							<div class="next-arrow" onclick="nextSlide()">&#9654;</div>
+						</div>
+					</div>
+					
+				</div>
+				
+            </div>
+				
+			</div>
+		</div>
+		
+		<div class="row">
+            <div class="cell details">
+                <h2 class="box-title">Qui est concerné ?</h2>
+				<div class="col-md-4">
+				  <div class="card card-1">
+					<h3>CM1 à la 6ème</h3>
+					<p>Initiation à la logique de l'apprentissage automatique.</p>
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="card card-2">
+					<h3>5ème à la 3ème</h3>
+					<p>Conception de classifieur simple (perceptron, arbre de décision)</p>
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="card card-3">
+					<h3>2nde à la Terminale</h3>
+					<p>Initiation à l'apprentissage profond (dérivées de fonction, calcul vectoriel)</p>
+				  </div>
+				</div>
+            </div>
+			<div class="cell learning">
+				<h2 class="box-title">Enseignement</h2>
+				<!-- Contenu de la section "Test" -->
+				Pour chaque niveau, l'objectif est d'apporter une image concrète de ce qu'est l'IA afin de les <b>éduquer au numérique</b> et
+				de <b>développer leur esprit critique</b>
+					
+			</div>
+        </div>
+
+        <!-- Troisième ligne du tableau -->
+        <div class="row">
+            <!-- 1ère colonne (Cours proposés) -->
+            <div class="cell left-box lesson">
+				<h2 class="box-title">Cours proposés</h2>
+				<div class="select-container">
+					<select id="level-select">
+						<option value="cm1">CM1</option>
+						<option value="cm2">CM2</option>
+						<option value="6eme">6ème</option>
+						<option value="5eme">5ème</option>
+						<option value="4eme">4ème</option>
+						<option value="3eme">3ème</option>
+						<option value="2nde">2nde</option>
+						<option value="1ere">1ère</option>
+						<option value="terminale">Terminale</option>
+					</select>
+				</div>
+				<div id="level-content" class="level-content">
+					<!-- Contenu s'affichera ici en fonction du choix -->
+				</div>
+				<div class="link-container">
+					<a id="en-savoir-plus-link" class="link" href="#" target="_blank">
+					En savoir plus
+					</a>
+				</div>
+				
+            </div>
+            <!-- 2ème colonne (Contact) -->
+            <div class="cell right-box contact">
+                <h2 class="box-title">Contactez-moi</h2>
+                <!-- Insérez ici le contenu de la section "Contact" -->
+				<p>Pour toute demande d'information complémentaire ou pour planifier une intervention dans votre établissement, veuillez me contacter :</p>
+				<p>Email : <a href="mailto:contact@votrenom.com">contact@votrenom.com</a></p>
+				<!--
+				<div class="link-container">
+					<a href="contact-form.html" class="link">Formulaire de Contact</a>
+				</div>
+				-->
+				
+				
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">&copy; 2023 Votre Nom - Tous droits réservés</p>
+        </div>
+    </footer>
+</body>
+</html>

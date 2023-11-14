@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="contact-form.css">
+    <title>Formulaire de Contact</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Contactez-nous</h2>
+        <form class="contact-form" action="traitement.php" method="post">
+		<input type="hidden" name="csrf_token" value="valeur_unique_generee_cote_serveur">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+			
+			<!-- Utilisation de CAPTCHA (exemple avec Google reCAPTCHA) -->
+			<div class="g-recaptcha" data-sitekey="votre_cle_recaptcha"></div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </div>
+</body>
+</html>
