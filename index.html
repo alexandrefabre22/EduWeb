@@ -11,7 +11,6 @@
 	
 </head>
 <body>
-    <!-- En-tête -->
 	<header>
 		<div class="content">
 		<hgroup>
@@ -22,15 +21,11 @@
 		<div class="overlay"></div>
 	</header>
 
-    <!-- Tableau de sections -->
     <div class="table">
-        <!-- Première ligne du tableau -->
 		<div class="row">
 			<div class="grid">
 				<div class="cell presentation">
-					<!-- Contenu de la section "Présentation" -->
 					<h2 class="box-title">Qui suis-je ?</h2>
-					<!--- Donner du sens aux apprentissages - -->
 					<p class="box-content">
 						Je m'appelle Alexandre Fabre, j'ai 29 ans. Mon parcours professionnelle m'a permis de cotoyer à la fois 
 						le monde de l'enseignement et celui de l'Intelligence Artificielle. 
@@ -93,31 +88,17 @@
 											humanoïde NAO à l'édition 2020 de Courts de Sciences. Des enfants ont pu le défier au jeu du Memory !
 										</p>
 									</div>
-									<img src="images/courts_sciences.jpg" alt="Image de la diapositive 1">
+									<img src="images/courts_sciences.jpg" alt="Courts de Sciences - Edition 2020">
 								</div>
 							</div>
 
-							<!-- Diapositive 2 -->
-							<div class="slide">
-								<div class="slide-content">
-									<p>Texte de la diapositive 2</p>
-									<img src="images/college.jpg" alt="Image de la diapositive 2">
-								</div>
-							</div>
-
-							<!-- Diapositive 3 -->
-							<div class="slide">
-								<div class="slide-content">
-									<p>Texte de la diapositive 3</p>
-									<img src="images/lycee.jpg" alt="Image de la diapositive 3">
-								</div>
-								
-							</div>
 						</div>
+						<!-- 
 						<div class="arrows">
 							<div class="prev-arrow" onclick="prevSlide()">&#9664;</div>
 							<div class="next-arrow" onclick="nextSlide()">&#9654;</div>
 						</div>
+						-->
 					</div>
 					
 				</div>
@@ -150,17 +131,40 @@
 				</div>
             </div>
 			<div class="cell learning">
-				<h2 class="box-title">Enseignement</h2>
+				<h2 class="box-title">Contenu</h2>
 				<!-- Contenu de la section "Test" -->
-				Pour chaque niveau, l'objectif est d'apporter une image concrète de ce qu'est l'IA afin de les <b>éduquer au numérique</b> et
-				de <b>développer leur esprit critique</b>
-					
+				<p class="box-content">
+				</p>
+				<ul class="list">
+					<li>
+						Interventions intégrées au programme de l'année en cours avec une dimension pluridisciplinaire : mathématiques, 
+						physique, sciences de l'ingénieur, éducation au numérique, ...
+					</li>
+					<li>
+						L'accent est mis sur le ludique : proposer des situations à enjeux mobilisant pleinement les élèves.
+					</li>
+					<li>
+						Une démarche inductive : l'élève construit le savoir.
+					</li>
+					<li>
+						Applications concrètes : nous pouvons discuter au préalable d'un objectif à atteindre. 
+					</li>
+					<li>
+						Le Suivi : les modalités de suivi pourront être également discutées. 
+					</li>
+					<li>
+						Ressources en ligne : jeux adidactiques sur le thème de l'IA et autres logiciels utiles.
+					</li>
+				</ul>
+				<div class="link-container">
+					<a class="link" href="#" target="_blank">
+					Ressources
+					</a>
+				</div>
 			</div>
         </div>
 
-        <!-- Troisième ligne du tableau -->
         <div class="row">
-            <!-- 1ère colonne (Cours proposés) -->
             <div class="cell left-box lesson">
 				<h2 class="box-title">Cours proposés</h2>
 				<div class="select-container">
@@ -177,7 +181,6 @@
 					</select>
 				</div>
 				<div id="level-content" class="level-content">
-					<!-- Contenu s'affichera ici en fonction du choix -->
 				</div>
 				<div class="link-container">
 					<a id="en-savoir-plus-link" class="link" href="#" target="_blank">
@@ -186,12 +189,10 @@
 				</div>
 				
             </div>
-            <!-- 2ème colonne (Contact) -->
             <div class="cell right-box contact">
                 <h2 class="box-title">Contactez-moi</h2>
-                <!-- Insérez ici le contenu de la section "Contact" -->
-				<p>Pour toute demande d'information complémentaire ou pour planifier une intervention dans votre établissement, veuillez me contacter :</p>
-				<p>Email : <a href="mailto:contact@votrenom.com">contact@votrenom.com</a></p>
+				<p class="box-content">Pour toute demande d'information complémentaire ou pour planifier une intervention dans votre établissement, veuillez me contacter :</p>
+				<p class="box-content">Email : <a href="mailto:contact@alexandrefabre.com">contact@alexandrefabre.com</a></p>
 				<!--
 				<div class="link-container">
 					<a href="contact-form.html" class="link">Formulaire de Contact</a>
@@ -203,7 +204,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <p class="footer-text">&copy; 2023 Votre Nom - Tous droits réservés</p>

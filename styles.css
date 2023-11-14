@@ -1,4 +1,3 @@
-/* Réinitialisation des styles de base */
 * {
     margin: 0;
     padding: 0;
@@ -23,10 +22,8 @@ header {
   height: 100%;
   position: relative;
   overflow: hidden;
-  /*background: url(https://unsplash.imgix.net/45/ZLSw0SXxThSrkXRIiCdT_DSC_0345.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=857f07b76abac23a7fb7161cc7b12a46) center no-repeat;
-  */
   background: url("./images/header_2.jpg");
-  /* Image Credit: Unsplash.me */
+  /* Image Credit: ... */
   background-size: cover;
 }
 
@@ -79,15 +76,6 @@ header .overlay {
   opacity: 0;  -webkit-filter: blur(4px);
 }
 
-.site {
-  padding: 20em 0;
-  text-align: center;
-  background-color: #efefef;
-  font-size: .8em;
-  color: #444;
-  position:relative
-}
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -101,7 +89,7 @@ header .overlay {
 /* Styles pour le tableau des cellules */
 .table {
     display: table;
-    width: 95%;
+    width: 100%;
 	margin : auto auto
 }
 
@@ -110,6 +98,8 @@ header .overlay {
     justify-content: space-between;
     margin-bottom: 20px;
     flex-wrap: wrap;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
 }
 
 .cell {
@@ -129,7 +119,7 @@ header .overlay {
 }
 
 .box-content {
-    font-size: 18px;
+    font-size: 16px;
     margin: 10px 0;
     color: #333;
 	text-align: justify;
@@ -151,11 +141,9 @@ header .overlay {
     background-color: #0056b3;
 }
 
-/* Styles pour la section "En détails" */
 .details {
 }
 
-/* Styles pour la section "Interventions" */
 .intervention {
 }
 
@@ -170,11 +158,10 @@ header .overlay {
 }
 
 .intervention p {
-    font-size: 18px;
+    font-size: 16px;
     margin: 10px 0;
 }
 
-/* Styles pour la section "Cours proposés" */
 .cours-proposes {
     background-color: #fff;
     padding: 20px;
@@ -188,7 +175,6 @@ header .overlay {
     margin-bottom: 20px;
 }
 
-/* Styles pour la section "Contact" */
 .section-contact {
     background-color: #fff;
     padding: 20px;
@@ -202,20 +188,11 @@ header .overlay {
     margin-bottom: 20px;
 }
 
-/* Styles pour le pied de page */
-.footer {
-    background-color: #007BFF;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.services-list {
+.list {
     list-style-type: disc;
     margin-left: 20px;
 }
 
-/* CSS pour la structure en tableau */
 .cell {
     display: table-cell;
     vertical-align: top;
@@ -223,25 +200,17 @@ header .overlay {
     border: 1px solid #ccc;
 }
 
-/*
-.cell.left-box {
-    width: 50%;
-}
-*/
 
 .box-title {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-
-/* Style de la liste déroulante personnalisée */
-/* Styles pour personnaliser le conteneur de la liste déroulante */
 .select-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff; /* Blanc */
+    background-color: #fff;
     border: 1px solid #ccc; /* Bordure gris clair */
     border-radius: 5px;
     padding: 5px;
@@ -249,17 +218,15 @@ header .overlay {
 }
 
 .select-container select {
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px;
     border: none;
     background-color: #f2f2f2; /* Gris clair */
     color: #333;
 }
 
-
-/* Flèche déroulante stylée */
 .select-container::after {
-    content: '\25BC'; /* Flèche vers le bas */
+    content: '\25BC';
     position: absolute;
     top: 50%;
     right: 10px;
@@ -267,14 +234,13 @@ header .overlay {
     pointer-events: none;
 }
 
-/* Style au survol */
 .select-container:hover {
     background-color: #f2f2f2;
 }
 
 
 #level-select {
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px;
     border: none;
     background-color: #f2f2f2;
@@ -283,7 +249,7 @@ header .overlay {
 }
 
 .level-content {
-    font-size: 18px;
+    font-size: 16px;
     margin: 10px 0;
     padding: 0 20px;
     color: #333;
@@ -291,9 +257,9 @@ header .overlay {
 
 .link-container {
     text-align: center;
-    margin: 20px auto; /* Centre horizontalement et ajoute un espace en haut et en bas */
-    max-width: 50%; /* Le conteneur prendra au maximum 50% de la largeur du parent */
-    width: 100%; /* Le conteneur prendra toute la largeur disponible */
+    margin: 20px auto; 
+    max-width: 50%;
+    width: 100%;
 }
 
 
@@ -339,23 +305,9 @@ header .overlay {
 }
 
 .achievement p {
-    font-size: 18px;
+    font-size: 16px;
     margin: 10px 0;
 }
-
-/*
-div.presentation{
-	flex: 3;
-}
-
-div.carrer{
-	flex: 2;
-}
-
-div.pedagogy{
-	flex: 3;
-}
-*/
 
 div.lesson{
 	flex: 3;
@@ -373,15 +325,10 @@ div.learning {
 	flex: 5;
 }
 
-/*
-Avec ces styles CSS, "Présentation" occupera la première colonne et s'étendra sur les deux premières lignes, 
-"Test" occupera la deuxième colonne et se trouvera en haut, et "Enseignement" occupera également la deuxième 
-colonne et sera positionné en bas de "Test". Cela créera la disposition souhaitée avec "Enseignement" à droite de "Test" et "Présentation".
-*/
-/* Styles pour la section "Présentation", "Test", et "Enseignement" */
+
 .grid {
     display: grid;
-    grid-template-columns: 3fr 1fr; /* Deux colonnes de largeur égale */
+    grid-template-columns: 3fr 1fr;
 	grid-template-rows: min-content minmax(0, 1fr); /* La première ligne est en fonction du contenu, la deuxième est flexible */
 }
 }
@@ -504,7 +451,7 @@ colonne et sera positionné en bas de "Test". Cela créera la disposition souhai
 }
 
 .timeline-action .content {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 
@@ -549,35 +496,28 @@ colonne et sera positionné en bas de "Test". Cela créera la disposition souhai
 }
 
 .card-3{
-   background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
-      background-repeat: no-repeat;
+    background-image: url(https://ionicframework.com/img/getting-started/theming-card.png);
+    background-repeat: no-repeat;
     background-position: right;
     background-size: 80px;
 }
 
-/*
-@media(max-width: 990px){
-  .card{
-    margin: 20px;
-  }
-} 
-*/
 
-/* Styles pour le carrousel d'interventions */
 .interventions {
     position: relative;
     overflow: hidden;
 }
 
 .container-interventions {
-    position: relative; /* Ajoutez ceci pour que les flèches soient positionnées par rapport à ce conteneur */
+    position: relative;
     overflow: hidden;
 }
 
 
 .carousel {
     display: flex;
-    width: 300%; /* 100% par diapositive (3 diapositives) */
+    /*width: 300%;*/ /* 100% par diapositive (3 diapositives) */
+	width: 100%;
     transition: transform 0.5s;
 	
 }
@@ -585,13 +525,14 @@ colonne et sera positionné en bas de "Test". Cela créera la disposition souhai
 .slide {
     flex: 1;
     position: relative;
-    min-width: 33.33%; /* 33% par diapositive (3 diapositives) */
-    overflow: hidden; /* Masque le contenu débordant */
+    /*min-width: 33.33%;*/ /* 33% par diapositive (3 diapositives) */
+	min-width: 100%;
+    overflow: hidden;
 }
 
 .slide-content {
     position: relative;
-    width: 100%; /* Ajuste la largeur du contenu */
+    width: 100%;
 	
 }
 
@@ -600,15 +541,14 @@ img {
 	margin: auto;
     height: auto;
     display: block;
-	
 }
 
 .arrows {
     position: absolute;
-    top: 90%; /* Ajustez la position verticale selon vos besoins */
+    top: 90%;
 	right: 10%;
     transform: translateY(-50%);
-    z-index: 999; /* Assurez-vous que les flèches restent au premier plan */
+    z-index: 999;
 	
 }
 
@@ -649,28 +589,16 @@ img {
     .presentation, .timeline, .enseignements {
         width: 100%;
     }
-	/*
-	.interventions,
-    .lesson,
-    .contact {
-		flex: 1;
-    }
-	.cell.left-box {
-		width: 100%;
-	}
-	*/
+	
 	 .row {
-        flex-direction: column; /* Change la direction du flex container en colonne */
+        flex-direction: column;
     }
 
 }
 
-
-/*
-    .card {
-        width: 100%; 
-        margin: 10px 0;
-    }
-*/
-    
+.footer {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
